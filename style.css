@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lobster", sans-serif;
+}
+h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top:0px;
+    background-color:rgb(2, 2, 110);
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid bisque;
+    z-index: 1;
+}
+#nav{
+  list-style: none;
+  overflow: hidden;
+  margin: 10px;
+ }
+#nav li{
+    float: left;
+}
+#nav li a{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 60px;
+    font-size:larger;
+    text-decoration: none;
+    color: white;
+ } 
+ #banner{
+    width: 100%;
+    height: 500px;
+    /* position: relative; */
+ }
+ #banner img{
+    width:100%;
+    height:500px;   
+ }
+ #welcome{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    padding-top: 70px;
+    position: absolute;
+    top:40%;
+    left: 35%;
+    color:white ; 
+    /* border: 6px double bisque;
+    background-color: rgba(79, 79, 13, 0.1); */
+    /* border-radius: 50px;
+    background: #d4d7f2;
+    box-shadow:  37px 37px 74px #b4b7ce,
+                 -37px -37px 74px #f4f7ff; */
+                 border-radius: 83px;
+background: #282857;
+box-shadow:  12px 12px 0px #7e7e81,
+             -12px -12px 0px #ffffff;
+ }
+
+ #name{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+ }
+ .row{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+ }
+ .col{
+    width: 250px;
+    height: 250px;
+    border: 1px solid beige;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.row:hover .col:hover{
+    transform: rotateY(180deg);
+}
+  .flip-box-front {
+    background-color:black;
+    color: white;
+  }
+  .flip-box-back {
+    padding-top: 20px;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+  }
+ .col img{
+    width:250px;
+    height: 250px;
+ }
+ .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .col1{
+    width: 250px;
+    height: 340px;
+    border: 1px solid beige;
+  }
+  .col1 img{
+    width: 250px;
+    height: 150px;
+  }
+
